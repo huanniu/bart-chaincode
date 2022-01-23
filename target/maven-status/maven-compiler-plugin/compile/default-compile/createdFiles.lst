@@ -1,0 +1,4 @@
+com/niuford/chaincode/BartContract.class
+com/niuford/chaincode/BartContract$BartError.class
+com/niuford/chaincode/ArtworkState.class
+com/niuford/chaincode/ArtistState.class

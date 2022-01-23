@@ -1,0 +1,4 @@
+com/niuford/chaincode/BartContractTest.class
+com/niuford/chaincode/BartContractTest$InvokeQueryAllAssetsTransaction.class
+com/niuford/chaincode/BartContractTest$InvokeQueryAllAssetsTransaction$MockAssetResultsIterator.class
+com/niuford/chaincode/BartContractTest$InvokeQueryAllAssetsTransaction$MockKeyValue.class
