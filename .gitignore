@@ -1,0 +1,8 @@
+# IntelliJ files
+.idea/
+*.iml
+
+target/
+
+# Mac generated
+*.DS_Store

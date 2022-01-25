@@ -98,6 +98,21 @@ public class BartContract implements ContractInterface {
     }
 
     @Transaction
+    public String queryArtwork(final Context context, final String key) throws JsonProcessingException {
+        ChaincodeStub stub = context.getStub();
+
+        String stateInJson = stub.getStringState(key);
+
+        if (stateInJson.isEmpty()) {
+            String errorMessage = String.format("Artwork %s does not exist", key);
+            logger.error(errorMessage);
+            throw new ChaincodeException(errorMessage, BartError.ARTWORK_NOT_FOUND.toString());
+        }
+
+        return stateInJson;
+    }
+
+    @Transaction
     public void createArtwork(final Context context, final String artworkInJson) throws JsonProcessingException {
         ChaincodeStub stub = context.getStub();
 
